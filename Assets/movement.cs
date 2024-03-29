@@ -23,6 +23,8 @@ public class PlayerMovement : MonoBehaviour
         transform.Translate(movement * moveSpeed * Time.deltaTime);
 
         // Set animation parameter based on movement
-        animator.SetBool("isRunning", movement.magnitude > 0f);
+        animator.SetBool("isMoving", movement.magnitude > 0f);
     }
 }
+
+
